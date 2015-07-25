@@ -1,4 +1,4 @@
-# Description
+# Description:
 
 	This sample  project makes insert,update and delete by using spring mvc and mysql database.
 	
@@ -14,7 +14,7 @@
 	
 	DATABASE:MYSQL;
 	
-  Function List;
+  Function List:
 	
 	1.Insert Person
 	2.Update Person
