@@ -1,8 +1,6 @@
 package com.springapp.mvc.jdbc;
 
-import com.springapp.mvc.Model.Person;
-import org.springframework.dao.DataAccessException;
-import org.springframework.jdbc.core.ResultSetExtractor;
+import com.springapp.mvc.model.Person;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

@@ -1,6 +1,6 @@
 package com.springapp.mvc.dao;
 
-import com.springapp.mvc.Model.Person;
+import com.springapp.mvc.model.Person;
 import com.springapp.mvc.jdbc.PersonRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

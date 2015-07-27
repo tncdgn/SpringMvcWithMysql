@@ -1,6 +1,6 @@
 package com.springapp.mvc.services;
 
-import com.springapp.mvc.Model.Person;
+import com.springapp.mvc.model.Person;
 import com.springapp.mvc.dao.PersonDao;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -9,6 +9,7 @@ import java.util.List;
 /**
  * Created by Tunç on 15.7.2015.
  */
+
 public  class PersonServiceImpl implements PersonService{
    @Autowired
     PersonDao personDao;

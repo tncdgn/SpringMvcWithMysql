@@ -1,4 +1,4 @@
-package com.springapp.mvc.Model;
+package com.springapp.mvc.model;
 
 /**
  * Created by Tunç on 13.7.2015.

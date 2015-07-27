@@ -36,8 +36,12 @@ jQuery(document).ready(function($){
 
         if(personId=="")
             swal({   title: "Warning!!!",   type:"warning",text: "Please Select a User",   timer: 2000,   showConfirmButton: false });
-        else
-        doAjax();
+        else{
+
+            removeOrcancelSelectedRow();
+
+        }
+
 
     })
 
@@ -51,8 +55,8 @@ jQuery(document).ready(function($){
 
 
             success : function(data) {
-               removeOrcancelSelectedRow();
-
+                $("#"+personId).remove();
+                swal("Deleted!", "Person has been deleted.", "success");
             },
             error:function(data){
 
@@ -70,8 +74,8 @@ jQuery(document).ready(function($){
                     closeOnCancel: false },
                 function(isConfirm){
                     if (isConfirm) {
-                        $("#"+personId).remove();
-                        swal("Deleted!", "Person has been deleted.", "success");
+                        doAjax();
+
                     }
                     else {     swal("Cancelled", "Person data  is safe :)", "error");   } });
         }

@@ -1,14 +1,14 @@
-package com.springapp.mvc.Controller;
+package com.springapp.mvc.controller;
 
-import com.springapp.mvc.Model.Person;
+import com.springapp.mvc.model.Person;
 import com.springapp.mvc.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import java.util.logging.*;
 
-import java.util.*;
+import java.util.Map;
+import java.util.logging.Logger;
 
 @Controller
 @RequestMapping("/person")
@@ -16,6 +16,7 @@ public class PersonController {
 
     @Autowired
     PersonService personService;
+
     static final Logger log=Logger.getLogger(PersonController.class.getName());
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(Map<String,Object> model) {

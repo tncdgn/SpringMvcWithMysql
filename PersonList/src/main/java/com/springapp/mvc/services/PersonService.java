@@ -1,6 +1,6 @@
 package com.springapp.mvc.services;
 
-import com.springapp.mvc.Model.Person;
+import com.springapp.mvc.model.Person;
 
 import java.util.List;
 
